@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Akshay PS</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.js"></script>
+    <script src="libraries/p5.sound.js"></script>
+    <script src="sketch.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  </head>
+  <body>
+    <div
+      data-aos="fade"
+      data-aos-anchor="#header"
+      data-aos-anchor-placement="bottom-top"
+      class="nav"
+      id="toggle"
+    >
+      <div class="button_container">
+        <span class="top"></span>
+        <span class="bottom"></span>
+      </div>
+    </div>
+    <div
+      data-aos="fade"
+      data-aos-anchor="#header"
+      data-aos-anchor-placement="bottom-top"
+      class="overlay"
+      id="overlay"
+    >
+      <nav class="overlay-menu">
+        <ul>
+          <li><a class="navlink" onclick="goto('0')">Home</a></li>
+          <li><a class="navlink" onclick="goto('1')">Work</a></li>
+          <li><a class="navlink" onclick="goto('2')">About</a></li>
+          <li><a class="navlink" onclick="goto('3')">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="your-cursor"></div>
+    <div class="follow"></div>
+    <main id="main">
+      <section id="cover">
+        <div id="header">
+          <a href="#" class="link">
+            <span class="mask">
+              <div class="link-container">
+                <span class="link-title1 title">2022 Portfolio</span>
+                <span class="link-title2 title">Code By Akshay</span>
+              </div>
+            </span>
+          </a>
+          <p>Based in Hyderabad, India</p>
+          <div class="navbar">
+            <p><a onclick="goto('1')">Work</a></p>
+            <p><a onclick="goto('2')">, About</a></p>
+            <p><a onclick="goto('3')">, Contact</a></p>
+          </div>
+        </div>
+        <h1>Akshay P S</h1>
+        <h1>Web Developer</h1>
+        <a onclick="goto('.4')">
+          <div class="mouse_scroll">
+            <span class="m_scroll_arrows unu"></span>
+          </div>
+        </a>
+      </section>
+      <section class="work">
+        <div class="container">
+          <h2>RECENT WORK</h2>
+          <section class="customer-logos slider">
+            <div class="slide">
+              <img src="gifs/works1.gif" />
+            </div>
+            <div class="slide">
+              <img src="gifs/works2.gif" />
+            </div>
+            <div class="slide">
+              <img src="gifs/works3.gif" />
+            </div>
+            <div class="slide">
+              <img src="gifs/works4.gif" />
+            </div>
+            <div class="slide">
+              <img src="gifs/works5.gif" />
+            </div>
+          </section>
+        </div>
+      </section>
+      <section id="about">
+        <div data-aos="fade-up" class="p-bit p1">
+          <p>
+            Passionate about Web Technologies. I love working at the
+            intersection of creativity and user friendly interfaces.
+          </p>
+        </div>
+        <div data-aos="fade-up" class="p-bit p2">
+          <p>
+            I've always wanted to create new things, unique experiences, getting
+            into web development changed a lot of things for me, and since then,
+            I try to push my work to new horizons with each project, always
+            putting quality first.
+          </p>
+        </div>
+        <div class="blobs">
+          <div class="waves">
+            <svg
+              class="waves"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 25 150 30"
+              preserveAspectRatio="none"
+              shape-rendering="auto"
+            >
+              <defs>
+                <style type="text/css">
+                  .st0 {
+                    opacity: 0.201;
+                  }
+
+                  .st1 {
+                    display: none;
+                    opacity: 0.7;
+                    fill: url(#Filled.Graph-4_1_);
+                    enable-background: new;
+                  }
+
+                  .st2 {
+                    fill: url(#gentle-wave_1_);
+                  }
+                </style>
+                <path
+                  id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                />
+                <linearGradient
+                  id="linear-gradient"
+                  x1="3675.66"
+                  y1="24.41"
+                  x2="3675.66"
+                  y2="24"
+                  gradientTransform="translate(5881855.72 4816) rotate(180) scale(1600 198)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="#6cc9f0" />
+                  <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <g class="parallax cls-1">
+                <use
+                  xlink:href="#gentle-wave"
+                  class="cls-2"
+                  x="48"
+                  y="0"
+                  opacity="70%"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  class="cls-2"
+                  x="48"
+                  y="3"
+                  opacity="50%"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  class="cls-2"
+                  x="48"
+                  y="5"
+                  opacity="30%"
+                />
+                <use xlink:href="#gentle-wave" class="cls-2" x="48" y="7" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div data-aos="fade" class="lets-work">
+          <img src="./pfp.jpg" alt="Akshay PS" />
+          <span>Let's work together</span>
+        </div>
+        <div id="card" class="noselect">
+          <div data-aos="fade" class="card-face">
+            <div class="card-border">
+              <h2>Akshay PS</h2>
+              <p
+                title="Copy Text"
+                id="email"
+                onclick="copyElementText(this.id)"
+              >
+                psakshay17@gmail.com
+              </p>
+              <p
+                title="Copy Text"
+                id="phone"
+                onclick="copyElementText(this.id)"
+              >
+                +91 949 207 1468
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-box">
+            <h5>VERSION</h5>
+            <p>2022©Edition</p>
+          </div>
+          <div class="footer-box">
+            <h5>LOCAL ZONE</h5>
+            <p id="ltime">GMT+5:30</p>
+          </div>
+          <div class="footer-box">
+            <h5>SNS</h5>
+            <div class="links">
+              <p class="magnetic">
+                <a
+                  class="link-flash"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/akshay-p-s/"
+                  >LinkedIn</a
+                >
+              </p>
+              <p class="magnetic">
+                <a
+                  class="link-flash"
+                  target="_blank"
+                  href="https://codepen.io/akshayps"
+                  >CodePen</a
+                >
+              </p>
+              <p class="magnetic">
+                <a class="link-flash" target="_blank" href="#">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    var crsr = $(".your-cursor"),
+      follower = $(".follow");
+
+    var posX = 0,
+      posY = 0;
+
+    var mouseX = 0,
+      mouseY = 0;
+
+    TweenMax.to({}, 0.016, {
+      repeat: -1,
+      onRepeat: function () {
+        posX += (mouseX - posX) / 9;
+        posY += (mouseY - posY) / 9;
+
+        TweenMax.set(follower, {
+          css: {
+            left: posX - 12,
+            top: posY - 12,
+          },
+        });
+
+        TweenMax.set(crsr, {
+          css: {
+            left: mouseX,
+            top: mouseY,
+          },
+        });
+      },
+    });
+
+    $(document).on("mousemove", function (e) {
+      mouseX = e.pageX;
+      mouseY = e.pageY;
+    });
+
+    $("a").on("mouseenter", function () {
+      crsr.addClass("active");
+      follower.addClass("active");
+    });
+    $("a").on("mouseleave", function () {
+      crsr.removeClass("active");
+      follower.removeClass("active");
+    });
+  </script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-sine",
+    });
+
+    $(document).ready(function () {
+      $(".customer-logos").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 520,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    });
+
+    $("#toggle").click(function () {
+      $(".button_container").toggleClass("active");
+      $("#overlay").toggleClass("open");
+    });
+
+    $(".navlink").click(function () {
+      $(".button_container").toggleClass("active");
+      $("#overlay").toggleClass("open");
+    });
+  </script>
+</html>
